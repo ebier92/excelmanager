@@ -14,8 +14,7 @@ def read_file_sheet(
     output_row_type: Literal["OrderedDict"] = ...,
     has_headers: bool = ...,
     range: tuple[str, str] | None = ...,
-) -> list[OrderedDict[Any, Any]]:
-    ...
+) -> list[OrderedDict[Any, Any]]: ...
 
 
 @overload
@@ -25,8 +24,7 @@ def read_file_sheet(
     output_row_type: Literal["OrderedDict"],
     has_headers: bool = ...,
     range: tuple[str, str] | None = ...,
-) -> list[OrderedDict[Any, Any]]:
-    ...
+) -> list[OrderedDict[Any, Any]]: ...
 
 
 @overload
@@ -36,8 +34,7 @@ def read_file_sheet(
     output_row_type: Literal["list"],
     has_headers: bool = ...,
     range: tuple[str, str] | None = ...,
-) -> list[list[Any]]:
-    ...
+) -> list[list[Any]]: ...
 
 
 @overload
@@ -47,8 +44,7 @@ def read_file_sheet(
     output_row_type: Literal["tuple"],
     has_headers: bool = ...,
     range: tuple[str, str] | None = ...,
-) -> list[tuple[Any, ...]]:
-    ...
+) -> list[tuple[Any, ...]]: ...
 
 
 def read_file_sheet(
